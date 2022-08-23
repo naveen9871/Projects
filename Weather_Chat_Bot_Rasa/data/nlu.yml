@@ -1,0 +1,748 @@
+version: "2.0"
+# user intents with examples
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - Hallo
+    - hi there
+    - greetings
+    - howdy
+    - Hi
+    - Hai
+    - Hey
+  
+    
+- intent: ack
+  examples: |
+    - that's great
+    - good work
+    - so nice of you bot
+    - you have done a great job bot
+    - your are super cool
+    - your are great weather bot
+    - great
+    - awesome!
+    - that's a quick response bot
+
+
+
+  
+    
+    
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+    - thanks!
+    - thank you
+    - thanks a lot
+    - great thanks
+    - appreciate it
+    - cool thanks
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you so much
+    - Thank's!
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cool thank you
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for the help
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks f
+    
+    
+- intent: smalltalk_human
+  examples: |
+    - am a talking with a bot?
+    - am i speaking to a bot?
+    - am i talking to a bot?
+    - am i talking to a human?
+    - am i talking to a person
+    - am i talking to a real person?
+    - am i talking to a robot?
+    - are you a human?
+    - are you a real person?
+    - are you real?
+    - can i contact a human being?
+    - i don't want to speak with a bot
+    - i don't want to talk
+    - i don't want to talk to a chatbot
+    - i don't want to talk with a chatbot
+    - i'd like to speak to a person
+    - is this a person?
+    - is this a real person or a bot?
+    - who am i talking to?
+    - you real?
+
+  
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    
+- intent: stop
+  examples: |
+    - stop
+    - Okay stop it !
+   
+    
+      
+- intent: unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremly sad
+    - so sad
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+   
+   
+- intent: send_sample_text
+  examples: |
+    - sample text
+    - text
+    - send me a sample text message
+    - example of text action   
+   
+- intent: send_sample_image
+  examples: |
+    - sample image
+    - image
+    - send me a sample image
+    - example of image action
+    - Sample Image
+   
+
+    
+    
+  
+    
+    
+
+- intent: noise
+  examples: |
+     - where does apples grow ?
+     - what are the places to visit ?
+     - fruits
+     - vegetables
+     - animals
+     - plants
+     - things
+     - noise
+     - where is your house?
+     - nearest attraction
+     - breakfast menu
+     - hotel
+     - children
+     - parents
+     - how much noise is comming from your palce ?
+     - please help with my ice cream it's dripping
+     - show me a picture of a chicken
+     - you're going to need a bigger boat
+     - can you help me to build a bot
+     - someone call the police i think the bot died
+     - what is the square root of 5
+     - I want to know the weather
+     - what is the meaning of life.
+     - Fridge Isn't Running
+     - my tv isn't working
+     - I want a pizza
+     - my washing machine isn't working
+     - what year is it
+     - order a pizza
+     - I want to order a pizza
+     - how old are you?
+     - add two plus two
+     - Hdjejene
+     - asd
+     - title
+     - how about the forecast
+     - foolish
+     - joke
+     - Can I get a hamburger?
+     - Can YouTube talk?
+     - Can you call me back ?
+     - Can you give me your datacenter's password
+     - Can you give me your datacenter's password?
+     - Can you make sandwiches?
+     - Can you please send me an uber
+
+
+
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - exit
+    - quit
+    - bye 
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - tlak to you later
+    - toodle-oo
+    - byr
+    
+    
+- intent: password_reset
+  examples: |
+    - need to reset my password
+    - need help resetting my password
+    - I can't reset my password
+    - need help with my password
+    - having issues resetting my password
+    - freaking password won't work
+    - reset my password
+    - password reset
+    - forgot my password and can't reset it
+    - uh password reset help please
+    - I'm having so many problems resetting my password
+    - Can you reset my password reset
+    - My pass word isn't working for me what do I do
+    - How can I reconfigure my pass word
+    - pass word reset?
+    - forgot my pass word again what now
+    - password help fix 
+    - show me how to set password again
+    - can you tell me how to change my password
+    - change pass word
+    - I forgot my password what can I do
+    - forgot my password help me reset it pls
+    
+    
+   
+- intent: human_handoff
+  examples: |
+    - I want a human
+    - can I speak to an agent
+    - real agent please
+    - real human
+    - chat with a live agent
+    - give me a person please
+    - i want to talk to a human
+    - can you transfer me to a human?
+    - handoff
+    - talk to a human
+    - i need to talk to a human
+    - human please
+    - i need help from a human
+    - i need help from a real human
+    - give me a human
+    - i want to talk to human
+    - i want a representative
+    - i want to talk to a person
+    - I don't wanna talk to a bot
+    - I dont like to talk to a machine
+    - I want to talk to a human
+    - I want to talk to the founders
+    - are there also humans working for your company?
+    - can I speak to a person?
+    - can i please speak to a human?
+    - can you forward me to your team
+    - can you please connect me to a real rasa employee?
+    - can you put me in touch with a human?
+    - do you have human support ?
+    - gimme a proper human
+    - give me a human now
+    - human handoff
+    - i dont wanna talk to a bot
+    - i want to speak to a real person
+    - i want to speak to customer service
+    - i want to talk to a human
+    - i want to talk to a person
+    - i want to talk to human
+    - i want to talk to someone at rasa
+    - i want to talk to someone else
+    - i want to talk to someone who is smarter than you
+    - i would like to speak to a person
+    - i'd rather speak with a real rasa employee
+    - id like to talk to a real rasa employee
+    - let me speak with a real person please
+    - let me talk to a human
+    - let me talk to a real person
+    - please give me a human
+    - service agent
+    - someone from customer care
+    - speak to a real person
+    - talking to a bot is stupid
+    - that's annoying I'd like to speak to someone real
+    - thats not helping, can i talk to human?
+    - wrong i want to speak to a human
+    - can i speak to human
+    - can i speak to your human
+    - i want to chat with human
+    - How do I talk to a human
+    - talk with a human
+    - Can i talk to a human instead
+    - Can you get a human to assist me?
+    - Can i talk to a human?
+    - Can I talk to a human
+    - Can I speak to a human?
+    - can i speak to a human
+    - no, i want to talk to human
+    - can you hand a conversation over to a human?
+    - can i talk to human
+    - i want to talk to a human
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - I need a real person
+    - can i took with a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person   
+    
+    
+    
+    
+    
+    
+    
+# example questions when location is given by the user
+- intent: weather_in_city
+  examples: |
+    - what is the [weather](wx_type) [tomorrow](forecast_period) in [Auckland](city)?
+    - hows the [weather](wx_type) [now](forecast_period) in [Christchurch](city)?
+    - Tell me the [weather](wx_type) [today](forecast_period) in [Auckland](city)
+    - [weather](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - is it [windy](wx_type) in [Auckland](city) [today](forecast_period)
+    - [raining](wx_type) [tomorrow](forecast_period) in [Wellington](city)
+    - is it [cloudy](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - [today](forecast_period) [rain](wx_type) in [Auckland](city)
+    - [raining](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - [temperature](wx_type) [current](forecast_period) in [Auckland](city)
+    - what is the [temperature](wx_type) in [Christchurch](city) [today](forecast_period)
+    - is it going to be [temperature](wx_type) in [Christchurch](city) [today](forecast_period)
+    - [wind](wx_type) in [Christchurch](city) [today](forecast_period)
+    - is it going to [rain](wx_type) in [Wellington](city) [tomorrow](forecast_period)
+    - [humid](wx_type) [today](forecast_period) in [Wellington](city)
+    - is it [windy](wx_type) [today](forecast_period) in [Auckland](city)
+    - is it going to [rain](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - is it going to be [cloudy](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - air [pressure](wx_type) in [Christchurch](city) [current](forecast_period)
+    - [pressure](wx_type) in [Christchurch](city) [today](forecast_period)
+    - what is the [pressure](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - [humidity](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - [uvi](wx_type) in [Auckland](city) [today](forecast_period)
+    - what is the [humidity](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - [rain](wx_type) [Wellington](city) [tomorrow](forecast_period)
+    - [Auckland](city) [current](forecast_period)
+    - [Wellington](city) [tomorrow](forecast_period)
+    - [Auckland](city)
+    - [Wellington](city)
+    - what is the [weather](wx_type) in [Auckland](city)?
+    - hows the [UV index](wx_type) in [Christchurch](city)?
+    - Tell me the [weather](wx_type) in [Auckland](city)
+    - [weather](wx_type) in [Auckland](city)
+    - [weather](wx_type) in [Wellington](city)
+    - is it [windy](wx_type) in [Auckland](city)
+    - [raining](wx_type) in [Wellington](city)
+    - is it [cloudy](wx_type) in [Christchurch](city)
+    - [rain](wx_type) in [Auckland](city)
+    - [raining](wx_type) in [Christchurch](city)
+    - [temperature](wx_type) in [Auckland](city)
+    - what is the [temperature](wx_type) in [Christchurch](city)
+    - is it going to be [cloudy](wx_type) in [Christchurch](city)
+    - is it going to [UV index](wx_type) in [Wellington](city)
+    - what is the [weather](wx_type) for [Wellington](city)
+    - what is the [pressure](wx_type) in [Auckland](city)
+    - air [pressure](wx_type) in [Auckland](city)
+    - what is the [humidity](wx_type) in [Auckland](city)
+    - air [humidity](wx_type) in [Auckland](city)
+    - [uvi](wx_type) [Auckland](city)
+    - [weather](wx_type) [Wellington](city)
+    - how about [Wellington](city)
+    - [humidity] (wx_type) in [Christchurch](city)
+# example questions of when location is not given
+- intent: weather_without_city
+  examples: |
+    - what is the [weather](wx_type) [today](forecast_period)?
+    - hows the [weather](wx_type) [tomorrow](forecast_period)?
+    - Tell me the [weather](wx_type) [today](forecast_period)
+    - [weather](wx_type) [tomorrow](forecast_period)
+    - is it [windy](wx_type) [current](forecast_period)
+    - [raining](wx_type) [today](forecast_period)
+    - is it [cloudy](wx_type) [tomorrow](forecast_period)
+    - [rain](wx_type) [today](forecast_period)
+    - [temperature](wx_type) [tomorrow](forecast_period)
+    - what is the [temperature](wx_type) [tomorrow](forecast_period)
+    - what is the [pressure](wx_type) [tomorrow](forecast_period)
+    - air [pressure](wx_type) [tomorrow](forecast_period)
+    - how is the weather [tomorrow](forecast_period)?
+    - what is the weather  [current](forecast_period)?
+    - is it going to [rain](wx_type)?
+    - is going to be [sunny](wx_type?
+    - what are the [conditions](wx_type) [tomorrow](forecast_period)?
+    - [weather](wx_type)
+    - [rain](wx_type)
+    - [wind](wx_type)
+    - [pressure](wx_type)
+    - [humidity](wx_type)
+    - how about [wind](wx_type)
+    - [sunny](wx_type)
+    - [rainy](wx_type)
+    - [snow](wx_type)
+    - [sun](wx_type)
+    - [pissing](wx_type)
+    - [shining](wx_type)
+    - how about [tomorrow](forecast_period)
+    - and [tomorrow](forecast_period)
+    - howabout later [today](forecast_period)
+    - later [today](forecast_period)
+    
+    
+- intent: greet_weather_in_city
+  examples: |
+    - Hai what is the [weather](wx_type) [tomorrow](forecast_period) in [Auckland](city)?
+    - Hai hows the [weather](wx_type) [now](forecast_period) in [Christchurch](city)?
+    - Hai Tell me the [weather](wx_type) [today](forecast_period) in [Auckland](city)
+    - Hai [weather](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - Hai is it [windy](wx_type) in [Auckland](city) [today](forecast_period)
+    - Hai [raining](wx_type) [tomorrow](forecast_period) in [Wellington](city)
+    - Hai is it [cloudy](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - Hai [today](forecast_period) [rain](wx_type) in [Auckland](city)
+    - Hai [raining](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - Hai [temperature](wx_type) [current](forecast_period) in [Auckland](city)
+    - Hai what is the [temperature](wx_type) in [Christchurch](city) [today](forecast_period)
+    - Hai is it going to be [temperature](wx_type) in [Christchurch](city) [today](forecast_period)
+    - Hai [wind](wx_type) in [Christchurch](city) [today](forecast_period)
+    - Hai is it going to [rain](wx_type) in [Wellington](city) [tomorrow](forecast_period)
+    - Hai [humid](wx_type) [today](forecast_period) in [Wellington](city)
+    - Hai is it [windy](wx_type) [today](forecast_period) in [Auckland](city)
+    - Hai is it going to [rain](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - Hai is it going to be [cloudy](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - Hai air [pressure](wx_type) in [Christchurch](city) [current](forecast_period)
+    - Hai [pressure](wx_type) in [Christchurch](city) [today](forecast_period)
+    - Hai what is the [pressure](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - Hai [humidity](wx_type) in [Christchurch](city) [tomorrow](forecast_period)
+    - Hai [uvi](wx_type) in [Auckland](city) [today](forecast_period)
+    - Hai what is the [humidity](wx_type) in [Auckland](city) [tomorrow](forecast_period)
+    - Hai [rain](wx_type) [Wellington](city) [tomorrow](forecast_period)
+    - Hai [Auckland](city) [current](forecast_period)
+    - Hai [Wellington](city) [tomorrow](forecast_period)
+    - Hai [Auckland](city)
+    - Hai, [Wellington](city)
+    - Hai what is the [weather](wx_type) in [Auckland](city)?
+    - Hai hows the [UV index](wx_type) in [Christchurch](city)?
+    - Hai Tell me the [weather](wx_type) in [Auckland](city)
+    - Hai [weather](wx_type) in [Auckland](city)
+    - Hai [weather](wx_type) in [Wellington](city)
+    - Hai is it [windy](wx_type) in [Auckland](city)
+    - Hai [raining](wx_type) in [Wellington](city)
+    - Hai is it [cloudy](wx_type) in [Christchurch](city)
+    - Hai [rain](wx_type) in [Auckland](city)
+    - Hai [raining](wx_type) in [Christchurch](city)
+    - Hai [temperature](wx_type) in [Auckland](city)
+    - Hai what is the [temperature](wx_type) in [Christchurch](city)
+    - Hai is it going to be [cloudy](wx_type) in [Christchurch](city)
+    - Hai is it going to [UV index](wx_type) in [Wellington](city)
+    - Hai what is the [weather](wx_type) for [Wellington](city)
+    - Hai what is the [pressure](wx_type) in [Auckland](city)
+    - Hai air [pressure](wx_type) in [Auckland](city)
+    - Hai what is the [humidity](wx_type) in [Auckland](city)
+    - Hai air [humidity](wx_type) in [Auckland](city)
+    - Hai [uvi](wx_type) [Auckland](city)
+    - Hai [weather](wx_type) [Wellington](city)
+    - Hai how about [Wellington](city)
+    - Hai [humidity] (wx_type) in [Christchurch](city)
+
+    
+    
+- intent: greet_weather_without_city
+  examples: |
+    - Hai what is the [weather](wx_type) [today](forecast_period)?
+    - Hai hows the [weather](wx_type) [tomorrow](forecast_period)?
+    - Hai Tell me the [weather](wx_type) [today](forecast_period)
+    - Hai [weather](wx_type) [tomorrow](forecast_period)
+    - Hai is it [windy](wx_type) [current](forecast_period)
+    - Hai is it [cloudy](wx_type) [tomorrow](forecast_period)
+    - Hai what is the [temperature](wx_type) [tomorrow](forecast_period)
+    - Hai what is the [pressure](wx_type) [tomorrow](forecast_period)
+    - Hai air [pressure](wx_type) [tomorrow](forecast_period)
+    - Hai how is the weather [tomorrow](forecast_period)?
+    - Hai what is the weather  [current](forecast_period)?
+    - Hai is it going to [rain](wx_type)?
+    - Hai is going to be [sunny](wx_type?
+    - Hai what are the [conditions](wx_type) [tomorrow](forecast_period)?
+    - Hai how about [tomorrow](forecast_period)
+    - Hai and [tomorrow](forecast_period)
+    - Hai howabout later [today](forecast_period)
+    - Hai later [today](forecast_period)   
+    
+    
+    
+    
+    
+# tricky questions.... 
+- intent: who_are_you
+  examples: |
+    - who are you
+    - are you a bot
+    - what is your name
+    - are you human
+    - what are you
+    - about you
+    - tell me about you
+    - know about you
+    - can i know more about you
+    - who's calling
+    - who' talking
+    
+- intent: greet_who_are_you
+  examples: |
+    - Hai who are you
+    - Hai are you a bot
+    - Hai what is your name
+    - Hai are you human
+    - Hai what are you
+    - Hai about you
+    - Hai tell me about you
+    - Hai know about you
+    - Haiii can i know more about you
+    - Hi who's calling
+    - Hii who' talking
+    
+    
+    
+    
+    
+    
+    
+    
+# chitchat.... 
+- intent: how_are_you
+  examples: |
+    - how are you
+    - are you ok
+    - nice to meet, how are you
+    - howdy
+    - hows it hanging
+    - how is it going
+    - hows it going
+    
+- intent: greet_how_are_you
+  examples: |
+    - Hai how are you
+    - Hai are you ok
+    - Hai nice to meet, how are you
+    - Hai howdy
+    - Hai hows it hanging
+    - Hai how is it going
+    - Hai hows it going  
+    
+    
+# questions about what can I do
+- intent: capabilities
+  examples: |
+    - what can you do
+    - what are your capabilities
+    - what are you good at
+    - what are you good for
+    - any instructions
+    - instructions
+    - how do i use this
+    - info
+    - information
+    - help
+    - can you help me
+    
+- intent: greet_capabilities
+  examples: |
+    - Hai what can you do
+    - Hai what are your capabilities
+    - Hai what are you good at
+    - Hello what are you good for
+    - Hai any instructions
+    - Hai instructions
+    - Hi how do i use this
+    - Hai info
+    - Hai information
+    - Hai help
+    - Hello can you help me  
+    
+    
+    
+# synonym defnitions to limit variations and to help NLU
+- synonym: current
+  examples: |
+    - currently
+    - now
+    - current
+- synonym: today
+  examples: |
+    - later
+    - today
+    - later today
+    - going to
+- synonym: tomorrow
+  examples: |
+    - tomorrow
+- synonym: uvi
+  examples: |
+    - uvi
+    - UV
+    - UV index
+- synonym: cloud_conditions
+  examples: |
+    - raining
+    - wet
+    - rain
+    - conditions
+    - condition
+    - clouds
+    - snow
+    - snowing
+    - sunny
+    - pissing
+    - hosing
+    - pooring
+    - cloudy
+    - rainy
+    - shining
+    - sun
+    - rainfall
+    - snowfall
+- synonym: temperature
+  examples: |
+    - hot
+    - cold
+    - chilly
+    - heat
+    - temp
+    - temperature
+- synonym: wind
+  examples: |
+    - windy
+    - breeze
+    - breezy
+    - gust
+    - gusty
+    - gale
+    - wind
+- synonym: weather
+  examples: |
+    - weather
+    - wx
+    - forecast
+- synonym: humid
+  examples: |
+    - humidity
+    - humid
+- synonym: Auckland
+  examples: |
+    - Auckland
+    - auckland
+- synonym: Wellington
+  examples: |
+    - Wellington
+    - wellington
+- synonym: Christchurch
+  examples: |
+    - Christchurch
+    - christchurch
+
+- synonym: Hai
+  examples: |
+    - hai
+    - hi
+    - Haiii
+    - Hello
+    - Hey
+    - hello there
+    - Hallo
+    - hi there
+    - greetings
+    - howdy
+    - Hi
+    
