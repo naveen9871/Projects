@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DEPRESSION ESTIMATE</title>
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+          .button {
+            display: inline-block;
+            border-radius: 3px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 25px;
+            padding: 15px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+
+          input[type=text], select {
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              
+          }
+          
+          header {
+            background: #1abc9c;
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+          }
+         
+          
+          .left {
+            width: 50%;
+          }
+          .right {
+            width: 50%;
+          }
+          .row {
+            display: flex;
+          }
+          .column {
+            flex: 50%;
+            padding: 10px;
+            
+          }
+          .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+          }
+          .head {
+            position: relative;
+            background-color: black;
+            height: 100vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .head video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+          }
+
+          .head .container {
+            position: relative;
+            z-index: 2;
+          }
+
+          .head .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+          }
+          h2 {
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+          }
+          body {
+            margin: 0;
+          }
+          h3{
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+          }
+          
+          
+         
+
+
+
+
+        
+        </style>
+           
+        
+
+</head>
+    
+<body>
+  <header>
+    <h2>DEPRESSION INTENSITY ESTIMATION</h2>
+  </header>
+
+
+  
+  
+  <form action = "/login" method = "post">
+    
+    <div class="head" >
+      
+      <video src="https://giant.gfycat.com/WetTidyIndianabat.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div > 
+        <div class = "row container">
+          <div class="column" style = "position:relative; left:250px; top:2px;">
+            <h3>Gender</h3>
+            <select id="Gender" name="Gender">
+              <option value="">Select an Option</option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+
+            <h3>Age </h3>
+            
+            <select id="Age" name="Age">
+              <option value="">Select an Option</option>
+              <option value="0">10 - 15</option>
+              <option value="1">16 - 20</option>
+              <option value="2">20 - 25</option>
+              <option value="3">Above 15</option>
+            </select>
+
+            <h3>Do you avoid social events because of overwhelming</h3>
+            <h3>feelings or fear of how people see you ?</h3>
+            
+            <select id="Do you avoid social events because of overwhelming feelings or fear of how people see you ?" name="Do you avoid social events because of overwhelming feelings or fear of how people see you ?">
+              <option value="">Select an Option</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+
+            <h3>How often do you feel depressed or hopeless ?</h3>
+            
+            <select id="How often do you feel depressed or hopeless ?" name="How often do you feel depressed or hopeless ?">
+              <option value="">Select an Option</option>
+              <option value="0">More than half the days</option>
+              <option value="1">Nearly every day</option>
+              <option value="2">Not at all</option>
+              <option value="3">Several days</option>
+              
+              
+
+            </select>
+
+
+
+            <h3>Have you ever been the victim of social media bullying ?</h3>
+            
+            <select id="Have you ever been the victim of social media bullying ?" name="Have you ever been the victim of social media bullying ?">
+              <option value="">Select an Option</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+
+
+
+            <h3>Which social media platform you use most ?</h3>
+            
+            <select id="Which social media platform you use most ?" name="Which social media platform you use most ?">
+              <option value="">Select an Option</option>
+              <option value="0">Facebook</option>
+              <option value="1">Instagram</option>
+              <option value="2">Others</option>
+              <option value="3">Snapchat</option>
+              <option value="4">Twitter</option>
+              <option value="5">Youtube</option>
+              
+
+            </select>
+
+
+          </div>
+            
+
+
+
+
+
+
+        
+
+   
+         
+
+          
+          
+          <div class="column" style = "position:relative; left:80px; top:2px;">
+            <h3>Feeling as if you have no hope for the future.</h3>
+    
+            <select id="Feeling as if you have no hope for the future." name="Feeling as if you have no hope for the future.">
+                <option value="">Select an Option</option>
+                <option value="0">Completely Agree</option>
+                <option value="1">Completely Disagree</option>
+                <option value="2">Neutral</option>
+                <option value="3">Somewhat agree</option>
+                <option value="4">Somewhat disagree</option>
+               
+            </select>
+
+            <h3>Is your appetite poor or are you overeating ?</h3>
+            
+            <select id="Is your appetite poor or are you overeating ?" name="Is your appetite poor or are you overeating ?">
+              <option value="">Select an Option</option>
+              <option value="0">More than half the days</option>
+              <option value="1">Nearly every day</option>
+              <option value="2">Not at all</option>
+              <option value="3">Several days</option>
+            </select>
+
+            <h3>Have you ever been harassed in any way ?</h3>
+            <h3>(Physical, sexual, or emotional abuse)</h3>
+            
+            <select id="Have you ever been harassed in any way ?(Physical, sexual, or emotional abuse)" name="Have you ever been harassed in any way ?(Physical, sexual, or emotional abuse)">
+              <option value="">Select an Option</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+             
+            </select>
+            
+            <h3>Do you have suicidal thoughts ?</h3>
+            <select id="Do you have suicidal thoughts ?" name="Do you have suicidal thoughts ?">
+              <option value="">Select an Option</option>
+              <option value="0">Completely Agree</option>
+              <option value="1">Completely Disagree</option>
+              <option value="2">Neutral</option>
+              <option value="3">Somewhat agree</option>
+              <option value="4">Somewhat disagree</option>
+            </select>
+
+
+
+
+
+            <h3>How would you rate your physical state ?</h3>
+            
+            <select id="How would you rate your physical state ?" name="How would you rate your physical state ?">
+              <option value="">Select an Option</option>
+              <option value="0">Average</option>
+              <option value="1">Excellent</option>
+              <option value="2">Not sure</option>
+              <option value="3">Poor</option>
+            </select>
+
+
+
+
+            <h3>Which social media platform you use most ?</h3>
+            
+            <select id="How many hours do you sleep per day ?" name="How many hours do you sleep per day ?">
+              <option value="">Select an Option</option>
+              <option value="0">4-6 hours</option>
+              <option value="1">7-9 hours</option>
+              <option value="2">9+ hours</option>
+              <option value="3">less than 4</option>
+            </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+            <div>
+              <p><input  type = "submit" value = "SUBMIT" class="button" style="vertical-align:middle"/></p>
+            </div>
+          </div>
+         
+         
+        </div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+    
+    
+  </form>
+
+
+</body>
+</html>
